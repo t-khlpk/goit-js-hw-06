@@ -22,3 +22,6 @@ allTitlesEl.forEach((title) => {
     console.log(`Category: `, title.textContent);
     console.log(`Elements: `, title.nextElementSibling.children.length);
 });
+
+const list = allCategories.firstElementChild;
+console.log(list);

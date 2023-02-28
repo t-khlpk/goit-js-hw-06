@@ -12,15 +12,15 @@ const counterValue = {
     this.value -= 1;
   },
 };
-const decbtn = document.querySelector('button[data-action ="decrement"]');
-const incbtn = document.querySelector('button[data-action ="increment"]');
+const decBtn = document.querySelector('button[data-action ="decrement"]');
+const incBtn = document.querySelector('button[data-action ="increment"]');
 const valueEl = document.querySelector("#value")
 
-decbtn.addEventListener("click", () => {
+decBtn.addEventListener("click", function ()  {
      counterValue.decrement();
     valueEl.textContent = counterValue.value;
 });
-incbtn.addEventListener("click" () => {
-     counterValue.increment();
+incBtn.addEventListener("click", function () {
+    counterValue.increment();
     valueEl.textContent = counterValue.value;
-})
+  })
