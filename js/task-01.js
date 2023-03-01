@@ -16,12 +16,10 @@
 const allCategories = document.querySelectorAll(".item");
 console.log(`Number of categories:`, allCategories.length);
 
-const allTitlesEl = document.querySelectorAll("h2");
+// const allTitlesEl = document.querySelectorAll("h2");
 
-allTitlesEl.forEach((title) => {
-    console.log(`Category: `, title.textContent);
-    console.log(`Elements: `, title.nextElementSibling.children.length);
+allCategories.forEach((element) => {
+    console.log(`Category: `, element.firstElementChild.textContent);
+    console.log(`Elements: `, element.lastElementChild.children.length);
 });
 
-const list = allCategories.firstElementChild;
-console.log(list);
